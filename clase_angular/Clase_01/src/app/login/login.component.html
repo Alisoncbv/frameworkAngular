@@ -1,0 +1,44 @@
+<!--<div class="container">
+    <div class="row">
+        <div class="col">
+
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    Titulo del Card
+                </div>
+                <div class="card-body">
+                   <input type="text" class="form-control" [(ngModel)]="nombre" >
+                   <button class="btn btn-primary" (click)="mostrarNombre()">Mostrar Text</button>
+                </div>
+            </div>
+
+            <h1>{{saludo}}</h1>
+        </div>
+        <div class="col">
+
+        </div>
+    </div>
+</div>
+-->
+
+
+
+<div class="container-login">
+    <div class="title">
+        <h1>Iniciar Sesión</h1>
+    </div>
+    <div class="login">
+        <form action="" class="formLogin" [formGroup]="formularioInicio" (ngSubmit)="ingresar()">
+            <label>Usuario</label>
+            <input type="text" formControlName="nombre">
+            <span *ngIf="this.formularioInicio.get('nombre')?.errors?.['required']"></span>
+
+            <label>Contraseña</label>
+            <input type="password" formControlName="clave">
+            <span *ngIf="this.formularioInicio.get('clave')?.errors?.['required']"></span>
+            <button class="ingresar">Ingresar</button>
+        </form>
+    </div>
+</div>

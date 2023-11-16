@@ -1,0 +1,36 @@
+<div class="container-register">
+  <div class="titleRegister">
+    <h1>Registrarse</h1>
+  </div>
+  <div class="container-form">
+    <form action="" class="register" [formGroup]="formularioRegistrar" (ngSubmit)="registrar()">
+
+      <label>Documento</label>
+      <input type="number" formControlName="documentoUsuario">
+      <span *ngIf="formularioRegistrar.get('documentoUsuario')?.errors?.['required']">Campo obligatorio</span>
+
+      <label>Nombre</label>
+      <input type="text" formControlName="nombreUsuario">
+      <span *ngIf="this.formularioRegistrar.get('nombreUsuario')?.errors?.['required']">Campo obligatorio</span>
+
+      <label>Usuario</label>
+      <input type="text" formControlName="usuario">
+      <span *ngIf="this.formularioRegistrar.get('usuario')?.errors?.['required']">Campo obligatorio</span>
+
+      <label>Clave</label>
+      <input type="password" formControlName="claveUsuario">
+      <span *ngIf="this.formularioRegistrar.get('claveUsuario')?.errors?.['required']">Campo obligatorio</span>
+
+      <label>Telefóno</label>
+      <input type="number" formControlName="telefonoUsuario">
+      <span *ngIf="this.formularioRegistrar.get('telefonoUsuario')?.errors?.['required']">Campo obligatorio</span>
+
+      <label>Correo</label>
+      <input type="email" formControlName="emailUsuario">
+      <span *ngIf="this.formularioRegistrar.get('emailUsuario')?.errors?.['required']">Campo obligatorio</span>
+       
+      <button class="registrar">Registrarme</button>
+
+    </form>
+  </div>
+</div>

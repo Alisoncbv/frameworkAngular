@@ -1,0 +1,49 @@
+.title{
+    margin-top: 20px;
+}
+
+.container-login{
+    text-align: center;
+    justify-content: center;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formLogin{
+    margin-top: 20px;
+    display: grid;
+    place-items: center;
+    background-color: #E7C19B;
+    width: 300px;
+    height: 180px;
+}
+
+label{
+    display: block;
+}
+
+input{
+    background-color: #E7C19B;
+    border: 1px solid #291D10;
+    border-radius: 5px;
+}
+
+.ingresar{
+    margin-top: 10px;
+    width: 90px;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid #291D10;
+    background-color: #291D10;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.ingresar:hover{
+    background-color: #754A1F;
+    border: 1px solid #754A1F;
+}
